@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+      .box-container1 {
+        position: relative;
+        border: 4px solid skyblue;
+        width: 800px;
+        height: 800px;
+        margin: 100px auto;
+      }
+
+      .box-container2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        border: 4px solid skyblue;
+        width: 100px;
+        height: 100px;
+      }
+
+    </style> <!--translate는 x축과 y축을 지정한 값 만큼 이동시킨다-->
+  </head>
+  <body>
+    <div class="box-container1">
+      <div class="box-container2"></div>
+    </div>
+  </body>
+</html>
